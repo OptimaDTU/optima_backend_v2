@@ -16,14 +16,13 @@ function compare(a,b){
 router.get('/:title',(req,res) => {
     
     const title  = req.params.title
-
     FullPost.find({title : title})
     .then(result => {
-
         for(let key in result){
             result[key].subPosts.sort(compare)
         }
 
+        
         res.send(result)
 
     })

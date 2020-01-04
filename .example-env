@@ -1,0 +1,5 @@
+SECRET = secret
+EMAIL = email
+PASSWORD = password
+
+MONGO_CONNECT = mongodb://localhost:27017/optima
